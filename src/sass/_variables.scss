@@ -1,0 +1,17 @@
+$darkblue:#2c3E50;
+$red:#e74c3c;
+$whitish:#ecf0f1;
+$blue2:#3498db;
+$blue3:#2980B9;
+
+@mixin flex-column{
+    display:flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+}
+
+@mixin flex-row{
+    display:flex;
+    flex-direction: row;
+}

@@ -1,0 +1,226 @@
+@import "variables";
+@import 'basics';
+
+#intro{
+    padding:40px;
+    background-size:cover;
+    margin-bottom:40px;
+    height:50vh;
+    @include flex-column;
+    h1 {
+        color:$whitish;
+        width:100%;
+        text-align:center;
+        margin-bottom:20px;
+        font-size:60px;
+    }
+    p {
+        padding:20px;
+        background:$red;
+        text-align:center;
+        width:300px;
+        margin:0 auto;
+        color:$whitish;
+        font-size:20px;
+        font-weight:bold;
+    }
+}
+ 
+.projects-header{
+    text-align: center;
+    font-size:40px;
+}
+
+#projects{
+    @include flex-row;
+    justify-content:center;
+    flex-flow:wrap;
+    .project{
+        height:300px;
+        width:400px;
+        margin: 20px 20px;
+        cursor:pointer;
+        text-align: center;
+        font-size:18px;
+        img{
+            max-width:100%;
+            height:300px;
+        }
+    }
+}
+
+#tech{
+    @include flex-row;
+    justify-content:center;
+    flex-flow:wrap;
+    img{
+        width:100px;
+        height:100px;
+        margin-right: 40px;
+    }
+}
+#canvas{
+    position:absolute;
+    background:#111;
+    left:0;
+    top:0;
+    z-index:-1;
+}
+/* PROJECT LIGHTBOX */
+#light-box{
+    position:fixed;
+    background:rgba(0,0,0,0.75);
+    width:100%;
+    height:100%;
+    top:0;
+    align-items: center;
+    justify-content: center;
+    z-index:99;
+    display:none;
+}
+
+.project-show{
+ width: 40%;
+ min-width:340px;
+ opacity: 1;
+ z-index:100;
+ max-height: calc(100vh - 40px);
+ position:relative;
+   .project-header{
+       background: #dbdbdb;
+       width:100%;
+       border-top-left-radius: 6px;
+       border-top-right-radius: 6px;
+       padding: 5px 20px;
+       border-bottom: 1px solid #aaa;
+       .close{
+           position:absolute;
+           right:20px;
+           top:2px;
+           font-size:18px;
+           color:#666;
+           cursor: pointer;
+           font-size:28px;
+       }
+   }
+
+   .project-content{
+       background:$whitish;
+       overflow-y: auto;
+       max-height:600px;
+       padding: 30px 40px 40px 40px;
+       border-bottom-left-radius:6px;
+       border-bottom-right-radius:6px;
+       img{
+           max-width:90%;
+           display:block;
+           margin: 0 auto;
+           margin-bottom: 40px;
+       }
+       p{
+           
+       }
+   }
+}
+
+.project-info{
+    margin-top: 20px;
+}
+ #project-4{
+     .project-left{
+         display:flex;
+         justify-content:center;
+     }
+     .project-thumb{
+         max-width:400px;
+     }
+ }
+
+ .project-right div{
+   margin-top: 30px;
+   &:first-child{
+       margin-top:0;
+   }
+  }
+
+@media screen and (max-width: 1500px){
+  .project-show{
+      @include flex-column;
+      justify-content: initial;
+
+  }
+}
+
+/* SKILLS AND EXPERIENCE */
+#skills{
+    padding: 40px 40px;
+    @include flex-column;
+    justify-content: center;
+}
+
+
+.skills{
+    margin-top:40px;
+    padding-top:20px;
+    border-top: 1px solid $darkblue;
+}
+#skills-container{
+    @include flex-row;
+    justify-content: flex-start;
+}
+
+
+.exp-item, .skills{
+    width:60%;
+    flex-grow:1;
+}
+.skill-category{
+    margin-right:100px;
+}
+
+footer{
+    @include flex-row;
+    background:$darkblue;
+    padding:40px;
+    a, p, h3{
+        color: $whitish;
+    }
+    .left,.right{
+        width: 50%;
+    }
+    .right img{
+        display:block;
+        float:right;
+        margin-right: 20px;
+    }
+}
+@media screen and (max-width: 1500px){
+  .container{
+      width:100%;
+  }
+  #skills-container{
+      @include flex-column;
+      align-items: flex-start;
+      justify-content: initial;
+  }
+
+  .exp-item li{
+      margin-top: 15px;
+  }
+  .exp-item, .skills{
+    width:100%;
+    flex-grow:1;
+  }
+  .skill-category{
+      margin-right: 0;
+  }
+
+  #project-4{
+      .project-left{
+          display:block;
+      }
+    .project-thumb{
+       max-width:initial;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'Droid Sans', sans-serif;
+    box-sizing: border-box;
+    color: #333;
+    line-height: 1.4em;
+    &:before, &:after{
+        box-sizing: inherit;
+    }
+}
+
+
+a{
+    color:$blue3;
+    padding-bottom: 4px;
+    text-decoration: none;
+    border-bottom: 2px solid $blue3;
+    &:hover{
+        color:$blue2;
+    }
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 10px 0;
+}
+
+p{
+    margin-top: 5px;
+}
+
+.container{
+    max-width:2000px;
+    margin:0 auto;
+}
+.text-center{
+    text-align:center;
+}
+
+.flex1{
+    flex:1 !important;
+}
+
+ul{
+    padding-left:35px;
+    li{
+        margin: 5px 0;
+    }
+}

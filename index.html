@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Michael Ciocca - Full Stack Web Developer</title>
+        <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
+        <link rel="stylesheet" href="dist/css/main.css">
+
+        <meta name="viewport" content="width=device-width">
+    </head>
+    <body>
+        <header id="intro">
+            <canvas id="canvas"></canvas>
+            <h1>Michael Ciocca</h1>
+            <p>Full Stack Web Developer</p>
+        </header>
+        <div id="light-box">
+            <div class="project-show" id="project-1">
+                <header class="project-header">
+                    <h3><a href="https://www.totalmortgage.com">Total Mortgage</a></h3>
+                    <div class="close">&times;</div>
+                </header>
+                <section class="project-content">
+                  <a href="images/tms.png" target="_blank">  <img class="project-image" src="images/tms.png" alt="Total Mortgage"></a>
+                     <p class="project-info">
+                         Total Mortgage is a lead focused site built on a LAMP stack. I am responsible for building a number of client facing tools and for overhauling the mobile version of our site.
+                         Additionally, when I joined the project I added modern development tools such as git and and gulp to our workflow. This site is currently in the process of a complete rebuild.
+                     </p>
+                     <h3>Built With</h3>
+                       <ul class="tech-list">
+                            <li>PHP</li>
+                            <li>Codeigniter</li>
+                            <li>JavaScript and JQuery</li>
+                            <li>Wordpress</li>
+                        </ul>
+
+                        <h3>Selected Links</h3>
+                        <ul class="selected-links">
+                            <li><a href="https://www.totalmortgage.com/mortgage-calculators">Mortgage Calculators</a></li>  
+                            <li> <a href="https://www.totalmortgage.com/games/ginger-bread/">Gingerbread House Building Game</a></li>
+                            <li> <a href="http://join.totalmortgage.com/recruit/bailey/">Loan Officer recruiting portal</a></li>
+                        </ul>
+                </section>
+            </div>
+
+            <div class="project-show" id="project-2">
+                <header class="project-header">
+                    <h3><a href="http://www.tryembr.com">Embr</a></h3>
+                    <div class="close">&times;</div>
+                </header>
+                <section class="project-content">
+                   <a href="images/embr2.png" target="_blank"> <img class="project-image" src="images/embr2.png" alt="Embr"></a>
+                      <div class="project-text">
+                        <p>
+                          Embr was created as both a ticket system for our marketing department and to automate the creation of marketing materials. Loan officers can choose from
+                          many different flyers, postcards, and emails that marketing has created and our system will insert their information onto the material. I was responsible for 
+                          our technology choices, building out important features, and leading the development on the project. It features real-time chat and notifications, as well as 
+                          email notifications
+                        </p>
+                        <p> 
+                          We are planning to release Embr as a SAAS product as well as 
+                          enchancing it to become a hub for everyone at Total Mortgage. <a href="http://www.tryembr.com">You can learn more here.</a>
+                        </p>
+                      </div>
+                        <div class="tech-used">
+                        <h4>Created with:</h4>
+                        <ul class="tech-list">
+                            <li>PHP 7 with Laravel</li>
+                            <li>React, React Router, and Flux</li>
+                            <li>ES6 (webpack and babel)</li>
+                            <li>Mocha, Enzyme, and Expect.js for testing</li>
+                            <li>Redis</li>
+                            <li>Node.js (Express web server)</li>
+                            <li>Socket.io</li>
+                            <li>Mandrill</li>
+                            <li>Hosted on an Ubuntu Digital Ocean VPS</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+
+            <div class="project-show" id="project-3">
+                <header class="project-header">
+                    <h3><a href="http://www.connecticutcraftbeer.com">Connecticut Craft Beer</a></h3>
+                    <div class="close">&times;</div>
+                </header>
+                <section class="project-content">
+              <a href="images/ctbeer.png" target="_blank"> <img src="images/ctbeer.png" alt="" class="project-thumb"></a>
+                      <div class="project-text">
+                         <p>
+                           A site featuring the breweries of Connecticut. Users can edit the breweries current offerings to keep the site up to date,
+                           find breweries near their current location, search for breweries by location, and see breweries close to other brewries. 
+                        </p>
+                      </div>
+                        <div class="tech-used">
+                        <h4>Created with:</h4>
+                        <ul class="tech-list">
+                            <li>Rails 4</li>
+                            <li>Bootstrap</li>
+                            <li>JavaScript</li>
+                            <li>Hosted on a Digital Ocean VPS</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+
+            <div class="project-show" id="project-4">
+                <header class="project-header">
+                    <h3><a href="http://clutchmoment.com/">Clutch Fantasy Baseball</a></h3>
+                    <div class="close">&times;</div>
+                </header>
+                <section class="project-content">
+                 <a href="images/clutch.png" target="_blank">  <img src="images/clutch.png" alt="" class="project-thumb"> </a>
+                      <div class="project-text">
+                         <p>
+                           This is the mobile web app that will be released as a companion to the upcoming  <a href="https://www.indiegogo.com/projects/clutch-baseball--2#/">Clutch fantasy baseball card game</a>. It's used by players to keep track of many different
+                           in game stats.
+                        </p>
+                      </div>
+                        <div class="tech-used">
+                        <h4>Created with:</h4>
+                        <ul class="tech-list">
+                            <li>Vue.js</li>
+                            <li>Sass</li>
+                            <li>Express.js</li>
+                            <li>MongoDB</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div> 
+
+      
+         <h2 class="projects-header">Projects</h2>
+        <section id="projects" class="container">
+            
+            <div class="project" id="total" data-project="1">
+                <img src="images/tms.png" alt="">
+                <p>Total Mortgage</p>
+            </div>
+            <div class="project" id="embr" data-project="2">
+                <img src="images/embr2.png" alt="">
+                <p>Embr</p>
+            </div>
+            <div class="project" id="beer" data-project="3">
+                <img src="images/ctbeer.png" alt="">
+                <p>Connecticut Craft Beer</p>
+            </div>
+            <div class="project" id="clutch" data-project="4">
+                <img src="images/clutch.png" alt="">
+                <p>Clutch Baseball</p>
+            </div>
+        </section>
+        
+        <section id="skills" class="container">
+            <div class="exp-item">
+                <h2>Experience</h2>
+                <h3 class="exp-header">Total Mortgage</h3>
+                <p class="title">Web Manager / Senior Developer</p>
+                <ul>
+                    <li>Manage and hire a team of Web Developers</li>
+                    <li>Work with designers and marketers to build out the Total Mortgage site</li>
+                    <li>Added new features to the site to allow non-technical users to update specific sections such as mortgage rates and the career page</li>
+                    <li>Completely rebuilt the majority of the mobile version of our site.</li>
+                    <li>Develop tools used internally, an example being a CLI program that interacts with our CRM</li>
+                    <li>Lead the development and technology choices on Embr, our marketing automation software and soon to be company intranet</li>
+                    <li>Aid in various technical projects as needed.</li>
+                </ul>
+            </div>
+
+            <div class="skills">
+                <h2>Skills</h2>
+                <div id="skills-container">
+                    <div class="skill-category">
+                        <h3>Frontend</h3>
+                        <ul>
+                            <li>HTML</li>
+                            <li>SASS</li>
+                            <li>JavaScript, including ES6</li>
+                            <li>React, Flux, Redux, and React-Router</li>
+                            <li>Build tools such as webpack and gulp</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Backend</h3>
+                        <ul>
+                            <li>PHP</li>
+                            <li>Laravel</li>
+                            <li>Codeigniter</li>
+                            <li>Ruby</li>
+                            <li>Ruby on Rails</li>
+                            <li>SQL (MySQL and PostgreSQL)</li>
+                            <li>Linux server adminstration</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Other</h3>
+                        <ul>
+                            <li>Basic Photoshop skills</li>
+                            <li>Server Administration</li>
+                            <li>Experienced with SEO and PPC</li>
+                            <li>Experienced with A/B and UI testing</li>
+                            <li>Experienced with TDD</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="left">
+                <h3>Contact</h3>
+                <p>Email: <a href="mailto:mciocca89@gmail.com"> Mciocca89@gmail.com</a></p>
+            </div>
+            <div class="right">
+               <a href="https://github.com/Mciocca">  
+                   <img src="images/github.png" alt="Github">
+               </a>
+               <a href="">
+                   <img src="images/linkedin.png" alt="LinkedIn">
+               </a>
+            </div>
+        </footer>
+
+        <script src="dist/js/main.js"></script>
+    </body>
+</html>
