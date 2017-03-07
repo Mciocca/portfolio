@@ -66,6 +66,9 @@ ul {
   text-align: center;
   font-size: 40px; }
 
+.projects-subheader {
+  text-align: center; }
+
 #projects {
   display: flex;
   flex-direction: row;
@@ -220,6 +223,10 @@ footer {
     display: block;
     float: right;
     margin-right: 20px; }
+
+@media screen and (max-width: 1300px) {
+  #projects .project {
+    margin-bottom: 60px; } }
 
 @media screen and (max-width: 1500px) {
   .container {
