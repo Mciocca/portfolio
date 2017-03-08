@@ -17,7 +17,7 @@
     p {
         padding:20px;
         background:$red;
-        text-align:center;
+        text-align:center; 
         width:300px;
         margin:0 auto;
         color:$whitish;
@@ -112,7 +112,7 @@
        background:$whitish;
        overflow-y: auto;
        max-height:600px;
-       padding: 30px 40px 40px 40px;
+       padding: 30px 40px 20px 40px;
        border-bottom-left-radius:6px;
        border-bottom-right-radius:6px;
        img{
@@ -151,7 +151,11 @@
   .project-show{
       @include flex-column;
       justify-content: initial;
-
+      max-width: 90%;
+      width:auto;
+  }
+  a{
+      padding-bottom: 1px;
   }
 }
 
@@ -230,8 +234,9 @@ footer{
       .project-left{
           display:block;
       }
-    .project-thumb{
-       max-width:initial;
-    }
+      .project-thumb{
+          max-width:90%;
+      }
+    
   }
 }

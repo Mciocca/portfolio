@@ -146,7 +146,7 @@ ul {
     background: #ecf0f1;
     overflow-y: auto;
     max-height: 600px;
-    padding: 30px 40px 40px 40px;
+    padding: 30px 40px 20px 40px;
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px; }
     .project-show .project-content img {
@@ -179,7 +179,11 @@ ul {
     justify-content: center;
     align-items: center;
     -ms-flex-pack: initial;
-    justify-content: initial; } }
+    justify-content: initial;
+    max-width: 90%;
+    width: auto; }
+  a {
+    padding-bottom: 1px; } }
 
 /* SKILLS AND EXPERIENCE */
 #skills {
@@ -251,4 +255,4 @@ footer {
   #project-4 .project-left {
     display: block; }
   #project-4 .project-thumb {
-    max-width: initial; } }
+    max-width: 90%; } }
