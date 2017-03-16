@@ -10,7 +10,7 @@
 
 a {
   color: #2980B9;
-  padding-bottom: 4px;
+  padding-bottom: 2px;
   text-decoration: none;
   border-bottom: 2px solid #2980B9; }
   a:hover {
@@ -210,6 +210,9 @@ ul {
   width: 60%;
   -ms-flex-positive: 1;
   flex-grow: 1; }
+
+.exp-item ul li:last-child {
+  list-style-type: none; }
 
 .skill-category {
   margin-right: 100px; }

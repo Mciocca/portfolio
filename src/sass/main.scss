@@ -179,6 +179,10 @@
     width:60%;
     flex-grow:1;
 }
+
+.exp-item ul li:last-child{
+    list-style-type: none;
+}
 .skill-category{
     margin-right:100px;
 }
